@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/logo-favicon.jpg">
+	<title>Servicio Pais</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- modal registro-->
+	<section>
+		<div id="modal-registro" class="modal">
+	    	<form class="modal-content input-field" novalidate autocomplete="on" method="POST">
+				<div class="input-field">
+					<i class="material-icons prefix">account_circle</i>
+					<input id="new-name" type="text" class="validate" maxlength="30">
+					<label for="new-name">Name</label>
+				</div>
+				<div class="input-field">
+					<input id="new-last" type="text" class="validate" maxlength="30">
+					<label for="new-last">Last Name</label>
+				</div>
+				<div class="input-field col s12">
+					<i class="material-icons prefix">email</i>
+					<input id="new-email" type="email" class="validate" maxlength="50">
+					<label for="new-email" data-error="wrong" data-success="right">Email</label>
+				</div>
+		    </form>
+	    <div class="modal-footer">
+	      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+	    </div>
+  		</div>
+	</section>
+<!--cabecera-->
+	<header>
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">Logo</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+				    <li><a class="modal-trigger waves-effect waves-light btn" href="#modal-registro">Registrate</a></li>
+				    <li><a href="badges.html">Components</a></li>
+				    <li><a href="collapsible.html">JavaScript</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+<!--video-->
+	<section id="video">
+		<iframe src="https://player.vimeo.com/video/140465025?autoplay=1&title=0&byline=0&portrait=0" width="100%" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	</section>
+<!-- 20 años-->
+	<section id="veinte">
+		
+	</section>
+<!--proyectos-->
+	<section id="proyectos"></section>
+<!--testimonio-->
+	<section id="testimonios"></section>
+<!--pie de pagina-->
+	<footer></footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<<script src="js/materialize.min.js"></script>
+	<script src="js/action.js"></script>
+	
+</body>
+</html>
