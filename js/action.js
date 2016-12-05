@@ -3,16 +3,18 @@
     $('.modal').modal();
   });
 
-  $(document).ready(function(){
-      $('.carousel').carousel();
+   $(document).ready(function(){
+      $('.slider').slider({full_width: true});
     });
+        
+
  
- // Next slide
-$('.carousel').carousel('next');
-$('.carousel').carousel('next', 3); // Move next n times.
+
+// Pause slider
+$('.slider').slider('pause');
+// Start slider
+$('.slider').slider('start');
+// Next slide
+$('.slider').slider('next');
 // Previous slide
-$('.carousel').carousel('prev');
-$('.carousel').carousel('prev', 4); // Move prev n times.
-// Set to nth slide
-$('.carousel').carousel('set', 4);
-      
+$('.slider').slider('prev');

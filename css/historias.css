@@ -1,0 +1,12 @@
+/* carrusel testimonios*/
+#testimonios{
+	background-color: #FCD59B;
+}
+
+.carousel-item a{
+	color: #fff;
+}
+.titulo-historias {
+	font-size: 30px;
+	color: #AA006C;
+}
