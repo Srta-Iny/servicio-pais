@@ -92,28 +92,8 @@ width: 100%;
 height: 50%;
 width: 100%;
 }
-<<<<<<< HEAD
-header img{
+.proyectos-logo{
 	width: 142px;
-=======
-*{
-	margin: 0px;
-	padding: 0px;
-}
-
-video{
-	width: 100%;
-	height: 100%
-	z-index: -1;
-	top:50%;
-	left: 50%;
-
-}
-
-header img{
-	width: 142px;
-    margin-top: 10px;
-
 }
 
 nav {
@@ -140,7 +120,6 @@ nav {
   	left: 0px;
   } 
 }
-
 
 #social{
 	top: 180px;
