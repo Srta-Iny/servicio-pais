@@ -3,17 +3,6 @@ $(document).ready(function(){
   $('.modal').modal();
 });
 
-$('.carousel.carousel-slider').carousel({full_width: true});
-
-$(document).ready(function(){
-      $('.carousel').carousel('next');
-      $('.carousel').carousel('next', 3); // Move next n times.
-      // Previous slide
-      $('.carousel').carousel('prev');
-      $('.carousel').carousel('prev', 4); // Move prev n times.
-      // Set to nth slide
-      $('.carousel').carousel('set', 4);
-});
 // crear usuario
 $(document).ready(function datosPerfil(){
 
@@ -64,3 +53,26 @@ function guardarStorageUsuario(a, b, c, d, e){
   localStorage.setItem('apellidoUser',apellido);
   localStorage.setItem('emailUser', correo);
 }
+
+//INGRIIIIIIID ESCUCHAAA.. NO TOQUIS ESTOOOOOO AJJAJA
+
+  $('.carousel.carousel-slider').carousel({full_width: true});
+
+   $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+        
+
+ 
+
+
+// Pause slider
+$('.slider').slider('pause');
+// Start slider
+$('.slider').slider('start');
+// Next slide
+$('.slider').slider('next');
+// Previous slide
+$('.slider').slider('prev');
+
+

@@ -1,5 +1,4 @@
 
-
 .proyectosFondo{
 background-color: #F4920A;
 height: 400px;
@@ -252,8 +251,34 @@ footer .material-icons{
 
 
 /* carrusel testimonios*/
-#testimonios{
-	background-color: #FCD59B;
+
+
+.carousel-item a{
+	color: #fff;
 }
 
 
+.titulo-carousel{
+	color: #FD091A;
+}
+
+.parrafos-carousel{
+	color: #FFF;
+}
+ .enlaces-historias{
+ 	font-size: 20px;
+ 	color: #FB0113;
+ }
+
+.titulo-color{
+	color: #fff;
+	padding: 5px;
+	margin-top: 30px;
+}
+
+
+.slider .indicators{
+	margin: 50px;
+    z-index: 3;
+
+}
