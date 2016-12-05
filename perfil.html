@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/logo-favicon.jpg">
+	<title>Servicio Pais</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="css/perfil.css">
+</head>
+<body>
+<!-- Modal perfil-->
+	<section>
+		<div id="editPerfil" class="modal">
+			<h5 class="center-align">Editar Perfil</h5>
+			<form class="modal-content input-field" novalidate autocomplete="on" method="POST">
+				<div class="row">
+					<div class="input-field col s6">
+						<i class="material-icons prefix">account_box</i>
+						<input id="new-name" type="text" class="validate">
+						<label for="new-name">Nombre</label>
+					</div>
+					<div class="input-field col s6">
+						<input id="new-last" type="text" class="validate">
+						<label for="new-last">Apellido</label>
+					</div>
+					<div class="input-field col s12">
+						<i class="material-icons prefix">email</i>
+						<input id="new-email" type="email" class="validate" maxlength="50">
+						<label for="new-email" data-error="wrong" data-success="right">Email</label>
+					</div>
+					<div class="input-field col s6">
+						<i class="material-icons prefix">school</i>
+						<input id="titulo" type="text" class="validate">
+						<label for="titulo">Titulo</label>
+					</div>
+					<div class="input-field col s6">
+						<i class="material-icons prefix">work</i>
+						<input id="actual" type="text" class="validate">
+						<label for="actual">Trabajo actual</label>
+					</div>
+					<div class="input-field col s6">
+						<i class="material-icons prefix">mode_edit</i>
+						<input id="servicio" type="text" class="validate">
+						<label for="servicio">Trabajo Servicio País</label>
+					</div>
+					<div class="input-field col s6">
+						<i class="material-icons prefix">edit_location</i>
+						<input id="localidad" type="text" class="validate">
+          				<label for="localidad">Localidad</label>
+					</div>
+					<div class="input-field col s6">
+						<i class="material-icons prefix">date_range</i>
+						<input id="fecha" type="text" class="validate">
+          				<label for="fecha">Periodo Trabajado</label>
+					</div>
+				</div>
+			</form>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
+				<a href="#!" class=" modal-action waves-effect waves-green btn-flat" id="aceptar">Agregar</a>
+			</div>
+		</div>
+	</section>
+<!-- Modal foto perfil-->
+	<section>
+		<div id="edit-foto" class="modal">
+			<form action="#">
+				<div class="file-field input-field">
+					<div class="btn">
+						<span>Foto</span>
+						<input type="file" id="input-perfil" accept="image/*">
+					</div>
+					<div class="file-path-wrapper">
+						<input class="file-path validate" type="text">
+					</div>
+				</div>
+			</form>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
+				<a href="#!" class=" modal-action waves-effect waves-green btn-flat" id="subir" name="action"><i class="material-icons right">cloud_upload</i>Subir</a>
+			</div>
+		</div>
+	</section>
+<!-- Modal agregar foto -->
+	<section>
+		<div id="agregar-foto" class="modal">
+			<form action="#">
+				<div class="file-field input-field">
+					<div class="btn">
+						<span>File</span>
+						<input type="file" id="input-foto" accept="image/*">
+					</div>
+					<div class="file-path-wrapper">
+						<input class="file-path validate" type="text">
+					</div>
+				</div>
+			</form>
+			<div class="modal-footer">
+				<a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Cancelar</a>
+				<a href="#!" class=" modal-action waves-effect waves-green btn-flat" id="subir-foto" name="action"><i class="material-icons right">cloud_upload</i>Subir</a>
+			</div>
+		</div>
+	</section>
+<!-- Header -->
+	<header>        
+		<nav>
+		    <div class="nav-wrapper">
+		    	<div class="container">
+		      		<a href="index.html" class="brand-logo"><img src="img/logo.png" alt="index"></a>
+		      		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				     <ul class="right hide-on-med-and-down">
+				        <li><a href="eventos.html">EVENTOS</a></li>
+				        <li><a href="proyectos.html">PROYECTOS</a></li>
+				        <li><a href="historias.html">TESTIMONIOS</a></li>
+				        <li><a href="oferta-laboral-inicio.html">LABORAL</a></li>
+				        <li><a href="mobile.html">ESTUDIOS</a></li>
+				        <li><a class="modal-trigger waves-effect waves-light btn" href="perfil.html">Mi Perfil</a></li>
+				     </ul>
+				     <ul class="side-nav" id="mobile-demo">
+				        <li><a href="eventos.html">EVENTOS</a></li>
+				        <li><a href="proyectos.html">PROYECTOS</a></li>
+				        <li><a href="historias.html">TESTIMONIOS</a></li>
+				        <li><a href="oferta-laboral-inicio.html">LABORAL</a></li>
+				        <li><a href="mobile.html">ESTUDIOS</a></li>
+				        <li><a class="modal-trigger waves-effect waves-light btn" href="perfil.html">Mi Perfil</a></li>
+				     </ul>
+		      	</div>
+		    </div>
+		 </nav>
+	</header>
+<!-- nombre y correo--> 
+	<section class="grey">                       
+		<div class="container"> 
+			<div class="row pad">
+				<div class="col s12 m5">
+					<h4 class="white-text bold" id="nombre"></h4>
+				</div>
+				<div class="col s12 m7">
+					<h5 class="white-text" id="correo"></h5>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--foto  e info perfil-->
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 m4">
+					<img id="fotoP" src="img/perfil.png" alt="" class="z-depth-2 cursor responsive-img" data-target="edit-foto">
+					<a href="http://twitter.com"><img src="img/twitter-p.png" alt="" class="responsive-img" ></a>
+					<a href="https://www.facebook.com/"><img src="img/facebook-p.png" alt="" class=" responsive-img" ></a>
+					<a href="http://www.linkedin.com/"><img src="img/linkedin-p.png" alt="" class=" responsive-img" ></a>
+				</div>
+				<div class="col s12 m8">
+					<h4 id="profecion" class="bold">Ingeniero Comercial</h4>
+					<p id="region">Region Metropolitana</p>
+					<span class="right pink-text text-darken-2 bold cursor" data-target="editPerfil">Editar Perfil</span>
+					<table class="section">
+						<tbody>
+							<tr>
+								<td class=" grey-text text-lighten-1">Actual</td>
+								<td>Gerente de operaciones en TERRASKY SA.</td>
+							</tr>
+							<tr>
+								<td class=" grey-text text-lighten-1">Servicio País</td>
+								<td>Desarrollo turismo sustentable</td>
+							</tr>
+							<tr>
+								<td class=" grey-text text-lighten-1">Localidad</td>
+								<td>Ralco</td>
+							</tr>
+							<tr> 
+								<td class=" grey-text text-lighten-1">Fecha</td>
+								<td>enero 2000 - enero 2001</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--intereses-->
+	<div class="divider"></div>
+	<section>
+		<div class="container intereses">
+			<div class="row">
+				<div class="col s12 m5">
+					<div  class="btn boton">Intereses</div>
+						<ul>
+							<li>TURISMO</li>
+							<li>DESARROLLO SUSTENTABLE</li>
+							<li>CULTURA</li>
+							<li>CICLISMO</li>
+						</ul>
+					<a class="waves-effect waves-light btn boton">Seguir</a>
+					<div>
+						<p class="seguidores">120</p>
+						<span>CONTACTOS</span>
+					</div>
+				</div>
+				<div class="col s12 m7">
+					<h4 class=" grey-text text-lighten-1">PARTICIPACIONES</h4>
+					<div>
+						<p class=" grey-text text-lighten-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis porro dolor.
+						</p>
+						<strong>Aenean massa.</strong>
+					</div>
+					<div>
+						<p class=" grey-text text-lighten-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis porro dolor.
+						</p>
+						<strong>Aenean massa.</strong>
+					</div>
+					<div>
+						<p class=" grey-text text-lighten-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem blanditiis porro dolor.
+						</p>
+						<strong>Aenean massa.</strong>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--comentarios-->
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col s12">
+					<div class="row">
+						<div class="input-field col s12">
+						  <textarea id="textarea1" class="materialize-textarea grey lighten-3" placeholder=" Comentario..."></textarea>
+						  <label for="textarea1"></label>
+						</div>
+						<button class="btn waves-effect waves-light right" type="submit" name="action" >
+							<i class="material-icons">send</i>
+						</button>
+						 <a class="waves-effect waves-teal btn-flat right">
+							<i class="material-icons" data-target="agregar-foto">photo_camera</i>
+						</a>
+					</div>
+					<div class="col s3">
+						<img src="img/perfil.png" alt="" class=" responsive-img" id="imagen-nueva">
+					</div>
+					<div class="col s9">
+						<blockquote>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, praesentium, eaque. Delectus fuga sit id, ex veritatis, inventore amet debitis quidem perferendis, et totam commodi, iusto! Reprehenderit aspernatur, exercitationem voluptatum.
+						</blockquote>
+						<span class=" blue-text"><em>Carla Soto</em></span>
+						<span>23/02/2017</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/perfil.js"></script>
+</body>
+</html>
