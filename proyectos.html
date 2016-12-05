@@ -9,107 +9,169 @@
 
 </head>
 <body>
-	<header>
-		<nav>
-			<div class="nav-wrapper">
-				<a href="#" class="brand-logo">Logo</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a class="modal-trigger waves-effect waves-light btn" href="#modal-registro">Registrate</a></li>
-					<li><a href="badges.html">Components</a></li>
-					<li><a href="collapsible.html">JavaScript</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
 	<section>
-		<div class="carousel carousel-slider center" data-indicators="true">
-			<div class="carousel-fixed-item center">
-				<a class="btn waves-effect white grey-text darken-text-2">Conocer mas</a>
-			</div>
-			<div class="carousel-item panel1" href="#one!">
-				<h2>First Panel</h2>
-				<p class="texto1">This is your first panel</p>
-			</div>
-			<div class="carousel-item panel2" href="#two!">
-				<h2>Second Panel</h2>
-				<p class="texto2">This is your second panel</p>
-			</div>
-			<div class="carousel-item panel3" href="#three!">
-				<h2>Third Panel</h2>
-				<p class="texto3">This is your third panel</p>
-			</div>
-			<div class="carousel-item panel4" href="#four!">
-				<h2>Fourth Panel</h2>
-				<p class="texto4">This is your fourth panel</p>
+		<div id="modal-registro" class="modal">
+
+			<form class="modal-content input-field" novalidate autocomplete="on" method="POST">
+				<div class="input-field">
+
+					<form class="modal-content input-field" novalidate autocomplete="on" method="POST">
+						<div class="input-field col s6">
+
+							<i class="material-icons prefix">account_circle</i>
+							<input id="new-name" type="text" class="validate" maxlength="30">
+							<label for="new-name">Nombre</label>
+						</div>
+						<div class="input-field">
+							<input id="new-last" type="text" class="validate" maxlength="30">
+							<label for="new-last">Apellido</label>
+						</div>
+						<div class="input-field">
+							<i class="material-icons prefix">email</i>
+							<input id="new-email" type="email" class="validate" maxlength="50">
+							<label for="new-email" data-error="wrong" data-success="right">Email</label>
+						</div>
+
+					</form>
+					<div class="modal-footer">
+						<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+					</div>
+				</div>
+
+			</form>
+			<div class="modal-footer">
+				<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Registrar</a>
 			</div>
 		</div>
-	</section>
-	<section>
+	</div>
+	<div id="unete">
+		<a href="#">
+			<h1>ÚNETE</h1>
+			<i class="material-icons center-align">supervisor_account</i>
+			<p>COMUNIDAD</p>
+			<p>DE EGRESADOS</p>
+		</a>
+	</div>
 
-		
-		<div class="container">
-			<div class="row">
-				<div class="col md12">
-					<h3>Nuestros proyectos favoritos</h3>
-					<div class="valign-wrapper">
-						<div class="row ">
-							<div class="col m10">
-								<div class="col m12">
+	<nav>
+		<div class="nav-wrapper">
+			<div class="container">
+				<a href="#!" class="brand-logo"><img src="img/logo.png" alt="index"></a>
+				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a href="sass.html">20AÑOS</a></li>
+					<li><a href="badges.html">PROYECTOS</a></li>
+					<li><a href="mobile.html">TESTIMONIOS</a></li>
+					<li><a class="modal-trigger waves-effect waves-light btn" href="#modal-registro">INICIAR SESIÓN</a></li>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="sass.html">20AÑOS</a></li>
+					<li><a href="badges.html">PROYECTOS</a></li>
+					<li><a href="mobile.html">TESTIMONIOS</a></li>
+					<li><a class="modal-trigger waves-effect waves-light btn" href="#modal-registro">INICIAR SESIÓN</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="social">
+		<ul>
+			<li><a href="https://www.facebook.com/fundacionsuperacionpobreza"><img src="img/facebook.png" alt=""></a></li>
+			<li><a href="https://twitter.com/serviciopais"><img src="img/twitter.png" alt=""></a></li>
+			<li><a href="https://www.instagram.com/serviciopais/"><img src="img/instagram.png" alt=""></a></li>
+			<li><a href="https://www.youtube.com/playlist?list=PLG4wFQeSh0dsJu_nx34uIN189-V-gskK0"><img src="img/youtube.png" alt=""></a></li>
+		</ul>
+	</div>
+</section>
+<!--cabecera-->
+<section>
+	<div class="carousel carousel-slider center" data-indicators="true">
+		<div class="carousel-fixed-item center">
+			<a class="btn waves-effect white grey-text darken-text-2">Conocer mas</a>
+		</div>
+		<div class="carousel-item panel1" href="#one!">
+			<h2 class="ertexto">First Panel</h2>
+			<p class="texto1">This is your first panel</p>
+		</div>
+		<div class="carousel-item panel2" href="#two!">
+			<h2 class="ertexto">Second Panel</h2>
+			<p class="texto2">This is your second panel</p>
+		</div>
+		<div class="carousel-item panel3" href="#three!">
+			<h2 class="ertexto">Third Panel</h2>
+			<p class="texto3">This is your third panel</p>
+		</div>
+		<div class="carousel-item panel4" href="#four!">
+			<h2 class="ertexto">Fourth Panel</h2>
+			<p class="texto4">This is your fourth panel</p>
+		</div>
+	</div>
+</section>
+<section>
+
+	
+	<div class="container">
+		<div class="row">
+			<div class="col md12">
+				<h3>Nuestros proyectos favoritos</h3>
+				<div class="valign-wrapper">
+					<div class="row ">
+						<div class="col m10">
+							<div class="col m12">
 
 
-									<div class="col m8">
-										<img src="img/26410726153_bb914a066a_b.jpg" class=" z-depth-5 imgproyecto1">
-									</div>
-									<div class="col m4">
-										<h5>Nombre Proyectos</h5>
-										<p>descripcion de que se necesita</p>
+								<div class="col m8">
+									<img src="img/26410726153_bb914a066a_b.jpg" class=" z-depth-5 imgproyecto1">
+								</div>
+								<div class="col m4">
+									<h5>Nombre Proyectos</h5>
+									<p>descripcion de que se necesita</p>
 
 
-										<div class="col m12">
-											<div class="col m6">
-												<p><i class="material-icons">location_on</i>Lugar</p>
-											</div>
-											<div class="col m6">
-												<p><i class="material-icons">label</i>Libros</p>
-											</div>
-											<div class="progress">
-												<div class="determinate" style="width: 70%"></div>
-											</div>
+									<div class="col m12">
+										<div class="col m6">
+											<p><i class="material-icons">location_on</i>Lugar</p>
+										</div>
+										<div class="col m6">
+											<p><i class="material-icons">label</i>Libros</p>
+										</div>
+										<div class="progress">
+											<div class="determinate" style="width: 70%"></div>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<div class="col m2 sidebar"><p>Proyectos por Region</p>
-								<ul class="section table-of-contents">
-									<li><a href="#introduction">Tarapaca</a></li>
-									<li><a href="#structure">Antofagasta</a></li>
-									<li><a href="#initialization">Atacama </a></li>
-									<li><a href="#initialization">Coquimbo</a></li>
-									<li><a href="#initialization">Valparaíso</a></li>
-									<li><a href="#initialization">O'Higgins</a></li>
-									<li><a href="#initialization">Maule</a></li>
-									<li><a href="#initialization">Biobío</a></li>
-									<li><a href="#initialization">Araucanía</a></li>
-									<li><a href="#initialization">Los Ríos</a></li>
-									<li><a href="#initialization">Los Lagos</a></li>
-									<li><a href="#initialization">Aysén</a></li>
-									<li><a href="#initialization">Magallanes</a></li>
-									<li><a href="#initialization">Arica y Parinacota </a></li>
-									<li><a href="#initialization">Metropolitana de Santiago </a></li>
-
-								</ul>
-							</div>
 						</div>
 
+						<div class="col m2 sidebar"><p>Proyectos por Region</p>
+							<ul class="section table-of-contents">
+								<li><a href="#introduction">Tarapaca</a></li>
+								<li><a href="#structure">Antofagasta</a></li>
+								<li><a href="#initialization">Atacama </a></li>
+								<li><a href="#initialization">Coquimbo</a></li>
+								<li><a href="#initialization">Valparaíso</a></li>
+								<li><a href="#initialization">O'Higgins</a></li>
+								<li><a href="#initialization">Maule</a></li>
+								<li><a href="#initialization">Biobío</a></li>
+								<li><a href="#initialization">Araucanía</a></li>
+								<li><a href="#initialization">Los Ríos</a></li>
+								<li><a href="#initialization">Los Lagos</a></li>
+								<li><a href="#initialization">Aysén</a></li>
+								<li><a href="#initialization">Magallanes</a></li>
+								<li><a href="#initialization">Arica y Parinacota </a></li>
+								<li><a href="#initialization">Metropolitana de Santiago </a></li>
 
+							</ul>
+						</div>
 					</div>
-				</div>
 
+
+				</div>
 			</div>
 
 		</div>
+
 	</div>
+</div>
 </section>
 <section>
 	<div class="container">
@@ -118,93 +180,120 @@
 				<div class="card">
 					<div class="card-image">
 						<img src="img/26737143170_af76307d7f_b.jpg">
-						<span class="card-title">Card Title</span>
+						<span class="card-title">Nombre Proyecto</span>
 					</div>
 					<div class="card-content">
-						<p>I am a very simple card. I am good at containing small bits of information.
-							I am convenient because I require little markup to use effectively.</p>
-						</div>
-						<div class="card-action">
-							<a href="#">This is a link</a>
-						</div>
+						<p>Descripcion de proyecto</p>
 					</div>
-				</div>
-				<div class="col s12 m6">
-					<div class="card">
-						<div class="card-image">
-							<img src="img/13312526045_4ec3eb05e2_b.jpg">
-							<span class="card-title">Card Title</span>
-						</div>
-						<div class="card-content">
-							<p>I am a very simple card. I am good at containing small bits of information.
-								I am convenient because I require little markup to use effectively.</p>
-							</div>
-							<div class="card-action">
-								<a href="#">This is a link</a>
-							</div>
-						</div>
+					<div class="card-action">
+						<a href="#">This is a link</a>
 					</div>
 				</div>
 			</div>
-		</section>
+			<div class="col s12 m6">
+				<div class="card">
+					<div class="card-image">
+						<img src="img/13312526045_4ec3eb05e2_b.jpg">
+						<span class="card-title">Nombre Proyecto</span>
+					</div>
+					<div class="card-content">
+						<p>Descripcion proyecto</p>
+					</div>
+					<div class="card-action">
+						<a href="#">This is a link</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
-		<section>
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col m12 ">
+				<h3>Mas proyectos</h3>			
+			</div>
+		</div>
+		<div class="row ">
+			<div class="col m4">
+				<img src="img/26410726153_bb914a066a_b.jpg" class=" z-depth-5 imgproyecto1">
+			</div>
+			<div class="col m2">
+				<h5>Nombre Proyectos</h5>
+				<p>descripcion de que se necesita</p>
+				<div class="col m12">
+					<div class="col m6">
+						<p><i class="material-icons">location_on</i>Lugar</p>
+					</div>
+					<div class="col m6">
+						<p><i class="material-icons">label</i>Libros</p>
+					</div>
+					<div class="progress">
+						<div class="determinate" style="width: 70%"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col m4">
+				<img src="img/26410726153_bb914a066a_b.jpg" class=" z-depth-5 imgproyecto1">
+			</div>
+			<div class="col m2">
+				<h5>Nombre Proyectos</h5>
+				<p>descripcion de que se necesita</p>
+				<div class="col m12">
+					<div class="col m6">
+						<p><i class="material-icons">location_on</i>Lugar</p>
+					</div>
+					<div class="col m6">
+						<p><i class="material-icons">label</i>Libros</p>
+					</div>
+					<div class="progress">
+						<div class="determinate" style="width: 70%"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section>
+
+
+		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col m12 ">
-						<h3>Nuestros Favoritos</h3>			
+					<div class="col s12 col m4 left-align footer-uno">
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="proyectos.html">PROYECTOS</a></li>
+							<li><a href="#">TESTIMONIOS</a></li>
+							<li><a href="http://xn--20aos-qta.cl/">20 AÑOS</a></li>
+							<li><a href="http://www.serviciopais.cl/">SERVICIO PAIS</a></li>
+							<li><a href="#">BOLSA TRABAJO</a></li>
+							<li><a href="#">CONTINUIDAD ESTUDIOS</a></li>
+						</ul>
 					</div>
-				</div>
-				<div class="row ">
-					<div class="col m4">
-						<img src="img/26410726153_bb914a066a_b.jpg" class=" z-depth-5 imgproyecto1">
-					</div>
-					<div class="col m2">
-						<h5>Nombre Proyectos</h5>
-						<p>descripcion de que se necesita</p>
-						<div class="col m12">
-							<div class="col m6">
-								<p><i class="material-icons">location_on</i>Lugar</p>
-							</div>
-							<div class="col m6">
-								<p><i class="material-icons">label</i>Libros</p>
-							</div>
-							<div class="progress">
-								<div class="determinate" style="width: 70%"></div>
-							</div>
+					<div class=" col s12 col m4 footer-dos">
+						<div class="row left-align">
+							<p> <i class="material-icons">location_on </i><a href="http://www.serviciopais.cl/encuentranos/#sp_encuentranos">Encuentranos Aquí</a></p>
+						</div>
+						<div class="row left-align">
+							<p><i class="material-icons">call </i> (56-2) 2513 9600 </p>
+						</div>
+						<div class="row left-align">
+							<p><i class="material-icons">email </i> info@superacionpobreza.cl  </p>
 						</div>
 					</div>
-
-					<div class="col m4">
-						<img src="img/26410726153_bb914a066a_b.jpg" class=" z-depth-5 imgproyecto1">
-					</div>
-					<div class="col m2">
-						<h5>Nombre Proyectos</h5>
-						<p>descripcion de que se necesita</p>
-						<div class="col m12">
-							<div class="col m6">
-								<p><i class="material-icons">location_on</i>Lugar</p>
-							</div>
-							<div class="col m6">
-								<p><i class="material-icons">label</i>Libros</p>
-							</div>
-							<div class="progress">
-								<div class="determinate" style="width: 70%"></div>
-							</div>
-						</div>
+					<div class="col s12 col m4 footer-tres">
+						<img src="img/logo.png" alt="">
+						<p>Todos los Derechos Reservados 2016.</p>
 					</div>
 				</div>
 			</div>
-			<section>
-		
+		</footer>
 
-				<footer>
-
-				</footer>
-
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-				<script src="js/materialize.min.js"></script>
-				<script src="js/proyectos.js"></script>
-			</body>
-			</html>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="js/proyectos.js"></script>
+	</body>
+	</html>
