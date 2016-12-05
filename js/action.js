@@ -3,12 +3,19 @@
     $('.modal').modal();
   });
 
+
+
+//INGRIIIIIIID ESCUCHAAA.. NO TOQUIS ESTOOOOOO AJJAJA
+
+  $('.carousel.carousel-slider').carousel({full_width: true});
+
    $(document).ready(function(){
       $('.slider').slider({full_width: true});
     });
         
 
  
+
 
 // Pause slider
 $('.slider').slider('pause');
@@ -18,3 +25,4 @@ $('.slider').slider('start');
 $('.slider').slider('next');
 // Previous slide
 $('.slider').slider('prev');
+

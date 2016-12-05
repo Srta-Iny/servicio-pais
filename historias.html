@@ -13,43 +13,46 @@
 </head>
 <body>
 <!-- modal registro-->
-	<section>
-
-		<div id="modal-registro" class="modal">
-	    	<form class="modal-content input-field" novalidate autocomplete="on" method="POST">
-				<div class="input-field">
-					<i class="material-icons prefix">account_circle</i>
-					<input id="new-name" type="text" class="validate" maxlength="30">
-					<label for="new-name">Name</label>
-				</div>
-				<div class="input-field">
-					<input id="new-last" type="text" class="validate" maxlength="30">
-					<label for="new-last">Last Name</label>
-				</div>
-				<div class="input-field col s12">
-					<i class="material-icons prefix">email</i>
-					<input id="new-email" type="email" class="validate" maxlength="50">
-					<label for="new-email" data-error="wrong" data-success="right">Email</label>
-				</div>
-		    </form>
-	    <div class="modal-footer">
-	      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-	    </div>
-  		</div>
-	</section>
-<!--cabecera-->
-	<header>
-		<nav>
-			<div class="nav-wrapper">
-				<a href="#" class="brand-logo">Logo</a>
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-				    <li><a class="modal-trigger waves-effect waves-light btn" href="#modal-registro">Registrate</a></li>
-				    <li><a href="badges.html">Components</a></li>
-				    <li><a href="collapsible.html">JavaScript</a></li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+  	
+	<!--cabecera-->
+		
+		<div id="social">
+			<ul>
+				<li><a href="https://www.facebook.com/fundacionsuperacionpobreza"><img src="img/facebook.png" alt=""></a></li>
+				<li><a href="https://twitter.com/serviciopais"><img src="img/twitter.png" alt=""></a></li>
+				<li><a href="https://www.instagram.com/serviciopais/"><img src="img/instagram.png" alt=""></a></li>
+				<li><a href="https://www.youtube.com/playlist?list=PLG4wFQeSh0dsJu_nx34uIN189-V-gskK0"><img src="img/youtube.png" alt=""></a></li>
+			</ul>
+		</div>
+		<div id="unete">
+			<a href="#">
+			    <h1>ÚNETE</h1>
+			   	<i class="material-icons center-align">supervisor_account</i>
+			    <p>COMUNIDAD</p>
+			    <p>DE EGRESADOS</p>
+			</a>
+		</div>
+<!--menu -->
+		 <nav>
+		    <div class="nav-wrapper">
+		    	<div class="container">
+		      		<a href="#!" class="brand-logo"><img src="img/logo.png " alt="index" class="logo"></a>
+		      		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				     <ul class="right hide-on-med-and-down">
+				        <li><a href="sass.html">20AÑOS</a></li>
+				        <li><a href="badges.html">PROYECTOS</a></li>
+				        <li><a href="mobile.html">TESTIMONIOS</a></li>
+				        <li><a class="modal-trigger waves-effect waves-light btn" href="#modal-registro">INICIAR SESIÓN</a></li>
+				     </ul>
+				     <ul class="side-nav" id="mobile-demo">
+				        <li><a href="sass.html">20AÑOS</a></li>
+				        <li><a href="badges.html">PROYECTOS</a></li>
+				        <li><a href="mobile.html">TESTIMONIOS</a></li>
+				        <li><a class="modal-trigger waves-effect waves-light btn" href="#modal-registro">INICIAR SESIÓN</a></li>
+				     </ul>
+		      	</div>
+		    </div>
+		 </nav>
 	<section>
 	<div class="container">
 		<div class="col s12 m7">
@@ -86,7 +89,39 @@
 	
       
 <!--pie de pagina-->
-	<footer></footer>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col s12 col m4 left-align footer-uno">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="proyectos.html">PROYECTOS</a></li>
+						<li><a href="#">TESTIMONIOS</a></li>
+						<li><a href="http://xn--20aos-qta.cl/">20 AÑOS</a></li>
+						<li><a href="http://www.serviciopais.cl/">SERVICIO PAIS</a></li>
+						<li><a href="#">BOLSA TRABAJO</a></li>
+						<li><a href="#">CONTINUIDAD ESTUDIOS</a></li>
+					</ul>
+				</div>
+				<div class=" col s12 col m4 footer-dos">
+						<div class="row left-align">
+					 <p> <i class="material-icons">location_on </i><a href="http://www.serviciopais.cl/encuentranos/#sp_encuentranos">Encuentranos Aquí</a></p>
+					</div>
+					<div class="row left-align">
+					  	<p><i class="material-icons">call </i> (56-2) 2513 9600 </p>
+					</div>
+					<div class="row left-align">
+					  	<p><i class="material-icons">email </i> info@superacionpobreza.cl  </p>
+					</div>
+				</div>
+				<div class="col s12 col m4 footer-tres">
+					<img src="img/logo.png" alt="">
+					<p>Todos los Derechos Reservados 2016.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+      
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<<script src="js/materialize.min.js"></script>
 	<script src="js/action.js"></script>
