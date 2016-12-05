@@ -65,3 +65,32 @@ nav {
 #edit-foto{
 	padding: 2%;
 }
+footer{
+	background-color: #161f28;
+	padding: 50px;
+	color: #c3c6c9;
+}
+
+footer li a{
+	color: #c3c6c9;
+	font-size: 12px;
+}
+
+footer .material-icons{
+	font-size: 20px;
+	color: #fff;
+}
+
+.footer-dos{
+	padding-top: 15px;
+}
+
+.footer-tres img{
+	width: 100px;
+}
+
+@media (max-width: 480px) {
+  .footer-uno , .footer-dos , .footer-tres {
+    padding-bottom: : 50px;
+  }  
+}

@@ -13,6 +13,9 @@
 		color: #FFFFFF;
 	
 }
+.ertexto{
+padding:5%;
+}
 .panel2{
 		background-image:url(../img/fondo001.jpg);
 		background-size: cover;    
@@ -84,4 +87,62 @@ width: 100%;
 .mapa{
 height: 50%;
 width: 100%;
+}
+header img{
+	width: 142px;
+}
+
+nav {
+	width: 100%;
+	height: 10vh;
+	background-color: rgba(22,31,40,0.7) !important;
+	box-shadow: none;
+	position: absolute;
+	top: 0px;
+	position: fixed;
+	z-index: 999;
+}
+
+@media (max-width: 480px) {
+  nav {
+    background-color: rgba(22,31,40,0.9) !important;
+  } 
+  header img{
+  	width: 92px;
+  }
+  video{
+  	position: absolute;
+  	top: 55px;
+  	left: 0px;
+  } 
+}
+
+footer{
+	background-color: #161f28;
+	padding: 50px;
+	color: #c3c6c9;
+}
+
+footer li a{
+	color: #c3c6c9;
+	font-size: 12px;
+}
+
+footer .material-icons{
+	font-size: 20px;
+	color: #fff;
+}
+
+.footer-dos{
+	padding-top: 15px;
+}
+
+.footer-tres img{
+	width: 100px;
+}
+
+@media (max-width: 480px) {
+  .footer-uno , .footer-dos , .footer-tres {
+    padding-bottom: : 50px;
+  }  
 }
