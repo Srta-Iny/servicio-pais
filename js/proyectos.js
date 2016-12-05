@@ -20,3 +20,6 @@ $('.carousel').carousel('set', 4);
  $(document).ready(function(){
     $('.scrollspy').scrollSpy();
   });	
+   $( document ).ready(function(){
+  	$(".button-collapse").sideNav();
+  });

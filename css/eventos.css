@@ -1,6 +1,9 @@
-.imgani img {
-	margin: 5%;
+/* header */
+.logo-evento{
+	width: 142px;
+    margin-top: 10px;
 }
+
 nav {
 	width: 100%;
 	height: 10vh;
@@ -10,6 +13,10 @@ nav {
 	top: 0px;
 	position: fixed;
 	z-index: 999;
+}
+/* imagen 20 años */
+.imgani img {
+	margin: 5%;
 }
 /* parallax pagina de eventos */
 .parallax-container {
@@ -115,15 +122,44 @@ button #submit {
 	width: 400px;
 }
 .ev-abajo {
-
+	padding-top: 3%;
 	background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#D38D00), to(#BB0E57))
 }
 .carousel img {
 	width: 350px;
 	height: 280px;
 }
-footer {
-	top: -30%;
+footer{
+	position: relative;
+	top: -55px;
+	background-color: #161f28;
+	padding: 50px;
+	color: #c3c6c9;
 }
+
+footer li a{
+	color: #c3c6c9;
+	font-size: 12px;
+}
+
+footer .material-icons{
+	font-size: 20px;
+	color: #fff;
+}
+
+.footer-dos{
+	padding-top: 15px;
+}
+
+.footer-tres img{
+	width: 100px;
+}
+
+@media (max-width: 480px) {
+  .footer-uno , .footer-dos , .footer-tres {
+    padding-bottom: : 50px;
+  }  
+}
+
 
 

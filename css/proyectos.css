@@ -8,6 +8,10 @@
 	font-size: 16px;
 	color: #FFFFFF;
 }
+.ertexto
+{
+padding: 5%;
+}
 .texto1{
 		font-size: 16px;
 		color: #FFFFFF;
@@ -82,14 +86,34 @@ height: 100%;
 width: 100%;
 }
 .sidebar{
-	margin-top: -10%;
+	margin-top: -5%;
 }
 .mapa{
 height: 50%;
 width: 100%;
 }
+<<<<<<< HEAD
 header img{
 	width: 142px;
+=======
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+video{
+	width: 100%;
+	height: 100%
+	z-index: -1;
+	top:50%;
+	left: 50%;
+
+}
+
+header img{
+	width: 142px;
+    margin-top: 10px;
+
 }
 
 nav {
@@ -115,6 +139,171 @@ nav {
   	top: 55px;
   	left: 0px;
   } 
+}
+
+
+#social{
+	top: 180px;
+	position: relative;
+	width: 45px;
+}
+
+@media (max-width: 480px) {
+  #social{
+    display: none;
+  }  
+}
+
+#social img{
+	position: fixed;
+}
+
+#veinte{
+	width: 100%;
+	padding: 50px;
+	color: ;
+}
+
+@media (max-width: 480px) {
+  #veinte{
+    padding-bottom: 100px;
+  }  
+}
+
+h1{
+	margin: 0px !important;
+}
+
+h1.años{
+	font-family: 'Miriam Libre', sans-serif;
+	font-weight: bold;
+	color: #bb007f;
+
+}
+
+span{
+	font-family: 'Lato', sans-serif;
+	font-weight: lighter;
+	padding-top: 34px;
+	font-size: 65px;
+	color: #000;
+}
+
+.red {
+    background-color: transparent !important;
+}
+
+hr{
+	text-align: center;
+    width: 20%;
+    border-top: 4px solid #fff;
+}
+
+#veinte p{
+	padding: 30px;
+}
+
+.info-uno{
+	width: 52%;
+    position: absolute;
+    z-index: 500;
+    top: 71%;
+    left: 25%;
+}
+
+@media (max-width: 480px) {
+  .info-uno{
+    top: 47%;
+    left: 3%;
+  }  
+}
+
+@media (max-width: 480px) {
+  #veinte{
+    position: relative;
+    top: 305px;
+  } 
+  #veinte span{
+  	font-size: 25px;
+  } 
+}
+
+#social{
+	position: fixed;
+	z-index: 700;
+	top: 180px;
+	background-color: rgba(255,255,255,0.1);
+}
+
+#social img{
+	width: 45px;
+	position: relative;
+	transition: 1.5s ease;
+ 		-moz-transition: 1.5s ease; /* Firefox */
+ 		-webkit-transition: 1.5s ease; /* Chrome - Safari */
+ 		-o-transition: 1.5s ease; /* Opera */
+}
+
+#social img:hover{
+	transform : scale(1.5);
+		-moz-transform : scale(1.5); /* Firefox */
+		-webkit-transform : scale(1.5); /* Chrome - Safari */
+		-o-transform : scale(1.5); /* Opera */
+		-ms-transform : scale(1.5); /* IE9 */
+}
+
+#unete a{
+    color: #fff;
+    background-color: #2e95df;
+    position: fixed;
+    top: 200px;
+    right: 0;
+    z-index: 600;
+    text-align: left;
+  	padding: 15px;
+}
+
+#unete h1{
+	font-family: 'Miriam Libre', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	text-align: left;
+	padding-bottom: -10px;
+}
+
+#unete p{
+
+	font-size: 12px;
+	text-align: left;
+}
+
+@media (max-width: 480px) {
+  #unete a{
+    position: absolute;
+    width: 100%;
+    top: 41%;
+   } 
+   #unete h1{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: -10px;
+
+   }
+   #unete p{
+    font-size: 13px;
+    text-align: center;
+   }
+    #unete i{
+    font-size: 37px;
+    left: 63px;
+    top: 6px;
+    position: absolute;
+   }
+}
+
+
+.pais{
+	margin-bottom: -10px;
 }
 
 footer{
@@ -145,4 +334,4 @@ footer .material-icons{
   .footer-uno , .footer-dos , .footer-tres {
     padding-bottom: : 50px;
   }  
-}
+
