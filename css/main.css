@@ -1,3 +1,4 @@
+
 *{
 	margin: 0px;
 	padding: 0px;
@@ -238,4 +239,10 @@ footer .material-icons{
 
 
 
+
+
+/* carrusel testimonios*/
+#testimonios{
+	background-color: #FCD59B;
+}
 
