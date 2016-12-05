@@ -1,16 +1,27 @@
 $(document).ready(function(){
     // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
     $('.modal').modal();
+    $(".button-collapse").sideNav();
+    // editar perfil 
+    var nombreUser = localStorage.getItem('nombreUser');
+    var apellidoUser = localStorage.getItem('apellidoUser');
+    var correoUser = localStorage.getItem('emailUser');
+//contendores 
+    var  nameContainer = $('#nombre');
+    var emailContainer = $('#correo');
+// asignado valores 
+    nameContainer.append(nombreUser+" "+apellidoUser);
+    emailContainer.append(correoUser);
 });
 // subir foto de perfil 
 $(document).ready(function(){
     $('#subir').click(function(){
-        var fotoSeleccionada = $('#input').get(0).files[0];
+        var fotoSeleccionada = $('#input-perfil').get(0).files[0];
         var reader  = new FileReader();
         var guardado;
         reader.onloadend = function () {
             imgData = reader.result;
-            guardado = localStorage.setItem('fotoPerfil-perfil', imgData)
+            guardado = localStorage.setItem('fotoPerfil', imgData)
 
         }
         reader.readAsDataURL(fotoSeleccionada);
